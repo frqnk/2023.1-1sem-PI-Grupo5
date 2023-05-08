@@ -1,0 +1,13 @@
+.navbar {
+    
+}
+
+.navbar-brand {
+    border: 1px;
+    border-radius: 100px;
+}
+
+.navbar-brand:hover {
+    background-color: rgba(255, 255, 0, 0.529);
+    transition: 0.5s;
+}
