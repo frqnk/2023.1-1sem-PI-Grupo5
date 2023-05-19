@@ -1,0 +1,129 @@
+html, body, #home {
+    /*border:1px dashed red;*/
+    height: 100%; 
+}
+
+/* Barra de navegação
+-----------------------------*/
+nav.navbar-transparente {
+    padding: 8px 0;
+    background-color: #3253B8;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+}
+.direitinha{
+    margin-right: 36rem;
+}
+
+/* Capa
+-----------------------------*/
+.capa {
+    text-align: center;
+}
+.btn-custon {
+    color:white;
+    border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+}
+.ladin {
+    margin-right: 35px;
+}
+
+/* Estrutura conteúdos
+-----------------------------*/
+.caixa {
+    padding-top: 20px;
+    padding-top: 20px;
+}
+#servico {
+    background: #ffff;
+}
+#servico h2, h3 {
+    color: #3253B8;
+    text-align: center;
+}
+#servico p::first-letter {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #3253B8;
+}
+.albuns {
+    padding: 10px 0;
+}
+h1 {
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    color: white;
+}
+h2 {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.0001em;
+    font-family: Lucida;
+}
+h3 { 
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.0001em;
+    font-family: Lucida;
+}
+/*.centrin {
+    text-align: center;
+}
+
+/* Rodapé
+-----------------------------*/
+
+/* Tipografia
+-----------------------------*/
+h1 {
+    font-weight: 900;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    color: white;
+}
+.servico {
+    color: white;
+}
+
+/* Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
+@media (max-width: 575.98px) {
+    .btn-custon {
+        margin: 10px 15px;
+        font-size: 1em;
+    }
+}
+
+/* Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
+        font-size: 3em;
+    }
+    .btn-custon {
+        margin: 10px 15px;
+        font-size: 1em;
+    }
+}
+
+/* Dispositivos médios (tablets com 768px ou mais)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    h1 {font-size: 4em;}
+    .btn-custon {
+        margin: 10px 20px;
+        font-size: 2em;
+    }
+}
+
+
+/* Dispositivos large (desktops com 992px ou mais)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h1 {
+        font-size: 5em;
+    }
+}
+
+/* Dispositivos extra large (desktops grandes com 1200px ou mais)*/
+@media (min-width: 1200px) {}
