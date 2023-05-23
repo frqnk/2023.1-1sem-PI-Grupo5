@@ -20,14 +20,14 @@
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="icon"  href="./img/firefly.png">
 
-    <title>Vagalumes</title>
+    <title>Vagalumes | Home</title>
   </head>
   <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente"> <!--bg-success-->
           <div class = "container">
             <a href="index.html" class="navbar-brand" style="color: #ffff;">
-              <img src= "./img/firefly2.png" width= "33" height="33" >vagalumes
+              <img src= "./img/firefly2.png" width= "33" height="33">Vagalumes
             </a>
 
             <button class ="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
@@ -37,19 +37,33 @@
             <div class= "collapse navbar-collapse " id="nav-principal">
               <ul class= "navbar-nav ml-3">
                 <li class = "nav-item ml-2">
-                  <a href ="" class ="nav-link">inicio</a>
+                  <a href ="index.html" class ="nav-link">inicio</a>
                 </li>         
                 <li class = "nav-item ml-2">
                   <a href ="" class ="nav-link">Profissionais</a>
                 </li>
                 <li class = "nav-item ml-2 direitinha">
-                  <a href ="" class ="nav-link">Sobre</a>
+                  <a href ="sobre.html" class ="nav-link">Sobre</a>
                 </li>
-                <li class="nav-item"></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Colaboradores
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="https://github.com/Brubzie" target="_blank">Bruno</a>
+                    <a class="dropdown-item" href="https://github.com/frqnk" target="_blank">Frank</a>
+                    <a class="dropdown-item" href="https://github.com/LucasIgnacio95" target="_blank">Lucas</a>
+                    <a class="dropdown-item" href="https://github.com/Alvarez-T" target="_blank">Thiago</a>
+                    <a class="dropdown-item" href="https://github.com/mborges007" target="_blank">Marina</a>
+                    <a class="dropdown-item" href="https://github.com/OrlandoMF75" target="_blank">Orlando</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="https://github.com/Alvarez-T/FATEC-DSM-GrupoPI-5" target="_blank">Projeto no GitHub</a>
+                  </div>
+                </li>
                 <li class = "nav-item mr-6">
                   <a href ="login.html" target="_self" class ="nav-link" >Cadastro</a>
                 </li>
-                <li class = "nav-item mr-6 ">
+                <li class = "nav-item mr-6">
                   <a href ="login.html" target="_self" class ="nav-link">Entrar</a>
                 </li>
               </ul>
@@ -91,19 +105,19 @@
   <section id ="servico" class ="caixa">
     <div class="container">
         <div class="row">
-            
-          <div class="col-md-6"><!--inicio lado direito-->
+          <!--inicio lado direito-->
+          <div class="col-md-6">
             <h2 class="centrin"> Serviço vagalumes</h2>
             <h3> Conectar Profissionais</h3>
               <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora possimus debitis incidunt at minus cupiditate fugit voluptatem, odit nihil, magni esse voluptas laborum nulla saepe earum tenetur velit quae aut..</p>
             
             <h3> Facilitar </h3>
               <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore perspiciatis, quia, nobis recusandae optio enim delectus sequi minima eligendi, possimus explicabo aliquid maiores sint autem perferendis distinctio alias aperiam eos.</p>
-            
-        </div> 
-          
-          
-          <div class="col-md-6"> <!-- inicio lado esquerdo-->
+        </div>
+        <!--fim lado direito-->
+
+          <!-- inicio lado esquerdo-->
+          <div class="col-md-6"> 
               
               <div class="row albuns"><!--primeira linha-->
                 <div class="col-md-6"><!--primeira coluna-->
@@ -120,8 +134,8 @@
                   </div>
                   
               </div>
-            </div><!--fim lado esquerdo-->
-
+            </div>
+            <!--fim lado esquerdo-->
             
               
         </div>
@@ -129,7 +143,7 @@
   </section>
 
     
-
+<!-- Fim -->
 <section>
  <footer  class="fimdapagina">
     <ul>
@@ -137,7 +151,7 @@
         <a href="index.html">Início</a>
       </li>
       <li>
-        <a href="/quemsomos.html">Sobre Nós</a>
+        <a href="sobre.html">Sobre</a>
       </li>
       <li>
         <a href="/fotos.html">Fotos</a>
