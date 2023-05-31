@@ -1,3 +1,8 @@
+/* Retirando formatação do browser */
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
 html, body, #home {
     /*border:1px dashed red;*/
@@ -20,6 +25,7 @@ nav.navbar-transparente {
 }
 
 .nav-link {
+    color: white;
     border-radius: 15px;
     color: rgb(155,157,255);
 }
@@ -27,6 +33,11 @@ nav.navbar-transparente {
 .nav-link:hover{
     background-color: rgb(227,255,198);
     transition: 0.3s;
+}
+
+.btn-custon {
+    text-decoration: none;
+    border: none;
 }
 
 /* Capa
@@ -61,8 +72,9 @@ nav.navbar-transparente {
 }
 
 .menorzinho {
+    display: flex;
     height: auto;
-    width: 550px;
+    width: auto;
 }
 
 
@@ -83,13 +95,35 @@ h3 {
     font-size: 2em;
     font-weight: 700;
     letter-spacing: -0.0001em;
-    font-family: Lucida;}
+    font-family: Lucida;
+}
+.acordeao-text {
+    color: green;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    letter-spacing: -0.0001em;
+    
+} .acordeao-text:hover {
+    text-decoration: underline;
+    color: #9b9dff;
+    transition: 0.3s;
+}
 .centralizando {
     margin-left: 100px;
 }
 .cnet {
     align-items: center;
     text-align: center;
+}
+
+/* Acordeão */
+.card {
+    align-items: start;
+    text-decoration: none;
+    border-radius: 20px;
+    background: #e3ffc6;
+    margin-bottom: 0.2rem;
 }
 
 
@@ -100,8 +134,7 @@ h3 {
     color: rgb(155,157,255);
   
     font-size: 20px;
-  
-    padding: auto;
+    
     display: block;
     
     bottom: 0;
@@ -117,7 +150,6 @@ h3 {
     height: 80%;
     width: 100%;
   
-    position:absolute;
     bottom: 0;
   }
   
