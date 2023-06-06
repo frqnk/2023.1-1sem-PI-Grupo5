@@ -25,13 +25,11 @@ nav.navbar-transparente {
 }
 
 .nav-link {
-    color: white;
-    border-radius: 15px;
     color: rgb(155,157,255);
 }
 
 .nav-link:hover{
-    background-color: rgb(227,255,198);
+    color: rgb(155, 157, 255);
     transition: 0.3s;
 }
 
@@ -128,52 +126,62 @@ h3 {
 
 
   /* RODAPÉ */
+.fimdapagina ul li {
+    float: right;
+    margin: 0 10px;
+}
 
-  .fimdapagina{
-    background-color: rgb(18,0,46);
+.fimdapagina h4 {
+    color: rgb(227,255,198);
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.fimdapagina{
+    background: linear-gradient(#012e40, black);
     color: rgb(155,157,255);
   
-    font-size: 20px;
+    font-size: 1.2rem;
     
     display: block;
     
+    padding: 50px 0 20px 0;
     bottom: 0;
-    position: static;
+    position: relative;
     width: 100%;
     text-align: center;
     height: auto;
-  }
+}
   
-  .fimdapagina div{
+.fimdapagina div{
     color: rgb(18,0,46);
   
     height: 80%;
     width: 100%;
   
     bottom: 0;
-  }
+}
   
   
-  .fimdapagina ul{
+.fimdapagina ul{
     padding: 0;
     text-align: center;
-  }
+}
   
-  .fimdapagina ul li{
+.fimdapagina ul li{
     display:inline-flex;
     margin: 1rem;
-  }
+}
   
-  .fimdapagina ul li a{
+.fimdapagina ul li a{
     text-decoration: none;
     color: rgb(155,157,255);
-  }
+}
   
-  .fimdapagina ul li a:hover{
+.fimdapagina ul li a:hover{
     color: rgb(227,255,198);
     transition: 0.3s;
-    text-decoration: underline;
-  }
+}
 
 
 
