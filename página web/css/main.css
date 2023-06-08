@@ -1,3 +1,8 @@
+/* Retirando formatação do browser */
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
 html, body, #home {
     /*border:1px dashed red;*/
@@ -20,13 +25,17 @@ nav.navbar-transparente {
 }
 
 .nav-link {
-    border-radius: 15px;
     color: rgb(155,157,255);
 }
 
 .nav-link:hover{
-    background-color: rgb(227,255,198);
+    color: rgb(155, 157, 255);
     transition: 0.3s;
+}
+
+.btn-custon {
+    text-decoration: none;
+    border: none;
 }
 
 /* Capa
@@ -61,8 +70,9 @@ nav.navbar-transparente {
 }
 
 .menorzinho {
+    display: flex;
     height: auto;
-    width: 550px;
+    width: auto;
 }
 
 
@@ -83,7 +93,20 @@ h3 {
     font-size: 2em;
     font-weight: 700;
     letter-spacing: -0.0001em;
-    font-family: Lucida;}
+    font-family: Lucida;
+}
+.acordeao-text {
+    color: green;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    letter-spacing: -0.0001em;
+    
+} .acordeao-text:hover {
+    text-decoration: underline;
+    color: #9b9dff;
+    transition: 0.3s;
+}
 .centralizando {
     margin-left: 100px;
 }
@@ -92,56 +115,73 @@ h3 {
     text-align: center;
 }
 
+/* Acordeão */
+.card {
+    align-items: start;
+    text-decoration: none;
+    border-radius: 20px;
+    background: #e3ffc6;
+    margin-bottom: 0.2rem;
+}
+
 
   /* RODAPÉ */
+.fimdapagina ul li {
+    float: right;
+    margin: 0 10px;
+}
 
-  .fimdapagina{
-    background-color: rgb(18,0,46);
+.fimdapagina h4 {
+    color: rgb(227,255,198);
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.fimdapagina{
+    background: linear-gradient(#012e40, black);
     color: rgb(155,157,255);
   
-    font-size: 20px;
-  
-    padding: auto;
+    font-size: 1.2rem;
+    
     display: block;
     
+    padding: 50px 0 20px 0;
     bottom: 0;
-    position: static;
+    position: relative;
     width: 100%;
     text-align: center;
     height: auto;
-  }
+}
   
-  .fimdapagina div{
+.fimdapagina div{
     color: rgb(18,0,46);
   
     height: 80%;
     width: 100%;
   
-    position:absolute;
     bottom: 0;
-  }
+}
   
   
-  .fimdapagina ul{
+.fimdapagina ul{
     padding: 0;
     text-align: center;
-  }
+}
   
-  .fimdapagina ul li{
+.fimdapagina ul li{
     display:inline-flex;
     margin: 1rem;
-  }
+}
   
-  .fimdapagina ul li a{
+.fimdapagina ul li a{
     text-decoration: none;
     color: rgb(155,157,255);
-  }
+}
   
-  .fimdapagina ul li a:hover{
+.fimdapagina ul li a:hover{
     color: rgb(227,255,198);
     transition: 0.3s;
-    text-decoration: underline;
-  }
+}
 
 
 
