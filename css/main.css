@@ -28,6 +28,8 @@ nav {
 }
 section {
     scroll-margin-top: calc(var(--nav-h) + 3rem);
+    padding-top: 0.01px;
+    margin-bottom: 3rem;
 }
 main {
     scroll-margin-top: calc(var(--nav-h));
