@@ -1,248 +1,102 @@
-/* Retirando formatação do browser */
-* {
-    margin: 0px;
-    padding: 0px;
+.debug {
+    border: 2px dashed cyan;
+    outline: 2px dashed magenta;
 }
+:root {
+    --cor-1: #001933;
+    --cor-2: #00B259;
+    --cor-3: #66FFC2;
 
-html, body, #home {
-    /*border:1px dashed red;*/
-    height: 100%; 
-    background: #daedf0;
-    overflow-x: hidden;
-    word-wrap: break-word;
+    /* para uso com canal alpha */
+    --cor-1-rgb: 0, 25, 51;
+    --cor-2-rgb: 0, 178, 89;
+    --cor-3-rgb: 102, 255, 194;
+
+    --nav-h: 66px;
 }
-
-/* Barra de navegação
------------------------------*/
-
-nav.navbar-transparente {
-    padding: 8px 0;
-    background-color: rgb(18,0,46);
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: rgb(155,157,255);
-}
-
-.nav-link {
-    color: rgb(155,157,255);
-}
-
-.nav-link:hover{
-    color: rgb(155, 157, 255);
-    transition: 0.3s;
-}
-
-.btn-custon {
-    text-decoration: none;
-    border: none;
-}
-
-/* Capa
------------------------------*/
-.capa {
-    text-align: center;
-}
-
-.ladin {
-    margin-right: 35px;
-}
-
-/* Estrutura conteúdos
------------------------------*/
-.caixa {
-    padding-top: 20px;
-    padding-top: 20px;
-}
-
-#servico h2, h3 {
-    color: rgb(18,0,46);
-    text-align: center;
-    
-}
-#servico p::first-letter {
-    font-size: 1rem;
+nav {
+    background: var(--cor-1);
     font-weight: bold;
-    color: rgb(18,0,46);
-  }
-.albuns{
-    padding: 10px 0;
 }
-
-.menorzinho {
-    display: flex;
-    height: auto;
-    width: auto;
+.btn-custom-1,
+.btn-custom-1:hover {
+    background: var(--cor-2);
 }
-
-
-h1 {
-    letter-spacing: -0.05em;
-    margin-bottom: 50px;
-    color: white;
-    
+.btn-custom-2,
+.btn-custom-2:hover {
+    background: var(--cor-3);
 }
-
-h2 {
-    font-size: 3em;
-    font-weight: 700;
-    letter-spacing: -0.0001em;
-    font-family: Lucida;
+main {
+    height: calc(100vh - var(--nav-h));
+    background:
+        /* camadas de cores só funcionam como gradientes */
+        linear-gradient(rgba(var(--cor-1-rgb), .5), rgba(var(--cor-1-rgb), .5)),
+        linear-gradient(#0007, #0007),
+        url(../img/evento.jpg) center no-repeat
+    ;
+    background-size: cover;
 }
-h3 { 
-    font-size: 2em;
-    font-weight: 700;
-    letter-spacing: -0.0001em;
-    font-family: Lucida;
-}
-.acordeao-text {
-    color: green;
-    text-decoration: none;
-    font-size: 1.2em;
-    font-weight: 700;
-    letter-spacing: -0.0001em;
-    
-} .acordeao-text:hover {
-    text-decoration: underline;
-    color: #9b9dff;
-    transition: 0.3s;
-}
-.centralizando {
-    margin-left: 100px;
-}
-.cnet {
-    align-items: center;
-    text-align: center;
-}
-
-/* Acordeão */
-.card {
-    align-items: start;
-    text-decoration: none;
-    border-radius: 20px;
-    background: #e3ffc6;
-    margin-bottom: 0.2rem;
-}
-
-
-  /* RODAPÉ */
-.fimdapagina ul li {
-    float: right;
-    margin: 0 10px;
-}
-
-.fimdapagina h4 {
-    color: rgb(227,255,198);
-    font-size: 0.8em;
-    text-transform: uppercase;
-}
-
-.fimdapagina{
-    background: linear-gradient(#012e40, black);
-    color: rgb(155,157,255);
-  
-    font-size: 1.2rem;
-    
-    display: block;
-    
-    padding: 50px 0 20px 0;
-    bottom: 0;
-    position: relative;
-    width: 100%;
-    text-align: center;
-    height: auto;
-}
-  
-.fimdapagina div{
-    color: rgb(18,0,46);
-  
-    height: 80%;
-    width: 100%;
-  
-    bottom: 0;
-}
-  
-  
-.fimdapagina ul{
-    padding: 0;
-    text-align: center;
-}
-  
-.fimdapagina ul li{
-    display:inline-flex;
-    margin: 1rem;
-}
-  
-.fimdapagina ul li a{
-    text-decoration: none;
-    color: rgb(155,157,255);
-}
-  
-.fimdapagina ul li a:hover{
-    color: rgb(227,255,198);
-    transition: 0.3s;
-}
-
-
-
-
-
-
-
-
-
-/* Tipografia
------------------------------*/
-
-h1 {
+main h1 {
     font-weight: 900;
-    letter-spacing: 0.03em;
-    margin-bottom: 50px;
-    color: white;
-
+}
+h2,
+h3 {
+    font-weight: bold;
+}
+.divider {
+    height: 1px;
+}
+.fs-small {
+    font-size: 0.875em;
 }
 
-.servico {
-    color: white;
-}
 
-
-/* Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
-@media (max-width: 575.98px) { 
-    .btn-custon {
-        margin: 10px 15px;
-        font-size: 1em;
-    }
- }
-
-/* Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
-@media (min-width: 576px) and (max-width: 767.98px) {
-    h1 {font-size: 3em;
-    }
-    .btn-custon {
-        margin: 10px 15px;
-        font-size: 1em;
-    }
-  }
-
-/* Dispositivos médios (tablets com 768px ou mais)*/
-@media (min-width: 768px) and (max-width: 991.98px) { 
-    h1 {font-size: 4em;}
-    .btn-custon {
-        margin: 10px 20px;
+/* xs and down */
+@media (max-width: 575.98px) {
+    main h1 {
         font-size: 2em;
     }
- }
+}
 
-
-/* Dispositivos large (desktops com 992px ou mais)*/
-@media (min-width: 992px) and (max-width: 1199.98px) {
-
-   
-    h1 {font-size: 5em;
-        } 
+/* sm and up */
+@media (min-width: 576px) {
+    main h1 {
+        font-size: 2.5em;
     }
+}
+/* sm and down */
+@media (max-width: 767.98px) {}
 
-/* Dispositivos extra large (desktops grandes com 1200px ou mais)*/
-@media (min-width: 1200px) {}
+/* md and up */
+@media (min-width: 768px) {
+    main h1 {
+        font-size: 3.12em;
+    }
+}
+/* md and down */
+@media (max-width: 991.98px) {}
 
+/* lg and up */
+@media (min-width: 992px) {
+    main h1 {
+        font-size: 3.75em;
+    }
+}
+/* lg and down */
+@media (max-width: 1199.98px) {}
+
+/* xl and up */
+@media (min-width: 1200px) {
+    main h1 {
+        font-size: 4.38em;
+    }
+}
+/* xl and down */
+@media (max-width: 1399.98px) {}
+
+/* xxl and up */
+@media (min-width: 1400px) {
+    main h1 {
+        font-size: 5em;
+    }
+}
