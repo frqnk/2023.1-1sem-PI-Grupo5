@@ -1,0 +1,102 @@
+.debug {
+    border: 2px dashed cyan;
+    outline: 2px dashed magenta;
+}
+:root {
+    --cor-1: #001933;
+    --cor-2: #00B259;
+    --cor-3: #66FFC2;
+
+    /* para uso com canal alpha */
+    --cor-1-rgb: 0, 25, 51;
+    --cor-2-rgb: 0, 178, 89;
+    --cor-3-rgb: 102, 255, 194;
+
+    --nav-h: 66px;
+}
+nav {
+    background: var(--cor-1);
+    font-weight: bold;
+}
+.btn-custom-1,
+.btn-custom-1:hover {
+    background: var(--cor-2);
+}
+.btn-custom-2,
+.btn-custom-2:hover {
+    background: var(--cor-3);
+}
+main {
+    height: calc(100vh - var(--nav-h));
+    background:
+        /* camadas de cores só funcionam como gradientes */
+        linear-gradient(rgba(var(--cor-1-rgb), .5), rgba(var(--cor-1-rgb), .5)),
+        linear-gradient(#0007, #0007),
+        url(../img/evento.jpg) center no-repeat
+    ;
+    background-size: cover;
+}
+main h1 {
+    font-weight: 900;
+}
+h2,
+h3 {
+    font-weight: bold;
+}
+.divider {
+    height: 1px;
+}
+.fs-small {
+    font-size: 0.875em;
+}
+
+
+/* xs and down */
+@media (max-width: 575.98px) {
+    main h1 {
+        font-size: 2em;
+    }
+}
+
+/* sm and up */
+@media (min-width: 576px) {
+    main h1 {
+        font-size: 2.5em;
+    }
+}
+/* sm and down */
+@media (max-width: 767.98px) {}
+
+/* md and up */
+@media (min-width: 768px) {
+    main h1 {
+        font-size: 3.12em;
+    }
+}
+/* md and down */
+@media (max-width: 991.98px) {}
+
+/* lg and up */
+@media (min-width: 992px) {
+    main h1 {
+        font-size: 3.75em;
+    }
+}
+/* lg and down */
+@media (max-width: 1199.98px) {}
+
+/* xl and up */
+@media (min-width: 1200px) {
+    main h1 {
+        font-size: 4.38em;
+    }
+}
+/* xl and down */
+@media (max-width: 1399.98px) {}
+
+/* xxl and up */
+@media (min-width: 1400px) {
+    main h1 {
+        font-size: 5em;
+    }
+}
