@@ -26,6 +26,9 @@ nav {
 .btn-custom-2:hover {
     background: var(--cor-3);
 }
+section {
+    scroll-margin-top: calc(var(--nav-h) + 3rem);
+}
 main {
     height: calc(100vh - var(--nav-h));
     background:
@@ -38,6 +41,9 @@ main {
 }
 main h1 {
     font-weight: 900;
+}
+p {
+  text-align: justify;
 }
 h2,
 h3 {
