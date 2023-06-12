@@ -26,7 +26,13 @@ nav {
 .btn-custom-2:hover {
     background: var(--cor-3);
 }
+section {
+    scroll-margin-top: calc(var(--nav-h) + 3rem);
+    padding-top: 0.01px;
+    margin-bottom: 3rem;
+}
 main {
+    scroll-margin-top: calc(var(--nav-h));
     height: calc(100vh - var(--nav-h));
     background:
         /* camadas de cores só funcionam como gradientes */
@@ -38,6 +44,9 @@ main {
 }
 main h1 {
     font-weight: 900;
+}
+p {
+  text-align: justify;
 }
 h2,
 h3 {
