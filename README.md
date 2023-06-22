@@ -1,3 +1,5 @@
+[![pages-build-deployment](https://github.com/frqnk/DSM-PI-1sem-grupo5/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://frqnk.github.io/DSM-PI-1sem-grupo5/)
+
 # Projeto Integrador - Grupo 5
 
 ## Integrantes
